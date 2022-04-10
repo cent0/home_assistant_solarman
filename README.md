@@ -1,7 +1,7 @@
 # Solarman integration
 This is a Home Assistant component for interacting with Solarman data collectors used with a variety of inverters. The integration allows Home Assistant to connect in direct-mode over the local network to the collector to extract the information, and no cables are required. 
 
-It has been tested with a 5kW DEYE/SUNSYNK inverter. The collector is reported to be used in Omnik, Hosola, Goodwe, Solax, Ginlong, Samil, Sofar and Power-One Solar inverters, you may get success from any of these as well.
+It has been tested with a 2kW Sun2000-GTIL2 2000W ,5kW DEYE/SUNSYNK inverter. The collector is reported to be used in Omnik, Hosola, Goodwe, Solax, Ginlong, Samil, Sofar and Power-One Solar inverters, you may get success from any of these as well.
 
 This component uses version 5 of the communication protocol. If your collector is older and this component does not work, try the following integration which is similar, but uses version 4 of the protocol:
 
@@ -58,13 +58,13 @@ Once logged in, expand the "Device information" and note the Device serial numbe
 
 sensor:
   - platform: solarman
-    name: DEYE 
+    name: SUN2000
     inverter_host: 192.168.0.100
     inverter_port: 8899
     inverter_serial: 1720747149 
     inverter_mb_slaveid: 1
     scan_interval: 30
-    lookup_file: sofar_lsw3.yaml
+    lookup_file: deye_string.yaml
 ~~~
 
 ## Parameters 
@@ -86,7 +86,7 @@ sensor:
 | Lookup File | Inverters supported | Notes |
 | --- | --- | --- |
 | parameters.yaml | DEYE/Sunsynk/SolArk Hybrid inverters | used when no lookup specified 
-| deye_string.yaml | DEYE/Sunsynk/SolArk String inverters | eg. SUN-4/5/6/7/8/10/12K-G03 Plus
+| deye_string.yaml | DEYE/Sunsynk/SolArk String inverters | eg. SUN2000-GTIL2 2000W SUN-4/5/6/7/8/10/12K-G03 Plus
 | sofar_lsw3.yaml | SOFAR Inverters
 
 
