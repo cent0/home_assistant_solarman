@@ -64,7 +64,7 @@ sensor:
     inverter_serial: 1720747149 
     inverter_mb_slaveid: 1
     scan_interval: 30
-    lookup_file: deye_string.yaml
+    lookup_file: sun2000_string.yaml
 ~~~
 
 ## Parameters 
