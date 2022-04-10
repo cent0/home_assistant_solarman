@@ -1,4 +1,4 @@
-# Solarman integration
+# Solarman integration SUN2000-GTIL2
 This is a Home Assistant component for interacting with Solarman data collectors used with a variety of inverters. The integration allows Home Assistant to connect in direct-mode over the local network to the collector to extract the information, and no cables are required. 
 
 It has been tested with a 2kW Sun2000-GTIL2 2000W ,5kW DEYE/SUNSYNK inverter. The collector is reported to be used in Omnik, Hosola, Goodwe, Solax, Ginlong, Samil, Sofar and Power-One Solar inverters, you may get success from any of these as well.
@@ -86,7 +86,8 @@ sensor:
 | Lookup File | Inverters supported | Notes |
 | --- | --- | --- |
 | parameters.yaml | DEYE/Sunsynk/SolArk Hybrid inverters | used when no lookup specified 
-| deye_string.yaml | DEYE/Sunsynk/SolArk String inverters | eg. SUN2000-GTIL2 2000W SUN-4/5/6/7/8/10/12K-G03 Plus
+| deye_string.yaml | DEYE/Sunsynk/SolArk String inverters | eg. SUN-4/5/6/7/8/10/12K-G03 Plus
+| sun2000_string.yaml | SUN2000-GTIL2 24V-90V inverters | eg. SUN2000-GTIL2 2000W 
 | sofar_lsw3.yaml | SOFAR Inverters
 
 
